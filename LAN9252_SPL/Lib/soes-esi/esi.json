@@ -36,50 +36,221 @@
     "sdo": {},
     "txpdo": {
       "6000": {
-        "otype": "VAR",
-        "name": "Key1",
+        "otype": "RECORD",
+        "name": "can1_rx_head",
         "access": "RO",
+        "items": [
+          {
+            "name": "Max SubIndex"
+          },
+          {
+            "name": "StdId",
+            "dtype": "UNSIGNED32",
+            "data": "&Obj.can1_rx_head.StdId",
+            "value": "0",
+            "access": "WO"
+          },
+          {
+            "name": "ExtId",
+            "dtype": "UNSIGNED32",
+            "data": "&Obj.can1_rx_head.ExtId",
+            "value": "0",
+            "access": "WO"
+          },
+          {
+            "name": "IDE",
+            "dtype": "UNSIGNED8",
+            "value": "0",
+            "access": "WO",
+            "data": "&Obj.can1_rx_head.IDE"
+          },
+          {
+            "name": "RTR",
+            "dtype": "UNSIGNED8",
+            "value": "0",
+            "access": "RO",
+            "data": "&Obj.can1_rx_head.RTR"
+          },
+          {
+            "name": "DLC",
+            "dtype": "UNSIGNED8",
+            "value": "0",
+            "access": "RO",
+            "data": "&Obj.can1_rx_head.DLC"
+          }
+        ],
         "pdo_mappings": [
           "txpdo"
-        ],
-        "dtype": "BOOLEAN",
-        "value": "0",
-        "data": "&Obj.Key1"
+        ]
       },
       "6001": {
-        "otype": "VAR",
-        "name": "Key2",
+        "otype": "ARRAY",
+        "name": "can1_rx_data",
         "access": "RO",
+        "items": [
+          {
+            "name": "Max SubIndex"
+          },
+          {
+            "name": "0",
+            "data": "&Obj.can1_rx_data[0]",
+            "value": "0"
+          },
+          {
+            "name": "1",
+            "value": "0",
+            "data": "&Obj.can1_rx_data[1]"
+          },
+          {
+            "name": "2",
+            "data": "&Obj.can1_rx_data[2]",
+            "value": "0"
+          },
+          {
+            "name": "3",
+            "value": "0",
+            "data": "&Obj.can1_rx_data[3]"
+          },
+          {
+            "name": "4",
+            "value": "0",
+            "data": "&Obj.can1_rx_data[4]"
+          },
+          {
+            "name": "5",
+            "value": "0",
+            "data": "&Obj.can1_rx_data[5]"
+          },
+          {
+            "name": "6",
+            "value": "0",
+            "data": "&Obj.can1_rx_data[6]"
+          },
+          {
+            "name": "7",
+            "value": "0",
+            "data": "&Obj.can1_rx_data[7]"
+          }
+        ],
         "pdo_mappings": [
           "txpdo"
         ],
-        "dtype": "BOOLEAN",
-        "value": "0",
-        "data": "&Obj.Key2"
-      },
-      "6002": {
-        "otype": "VAR",
-        "name": "Counter",
-        "access": "RO",
-        "pdo_mappings": [
-          "txpdo"
-        ],
-        "dtype": "UNSIGNED32",
-        "value": "0",
-        "data": "&Obj.Counter"
+        "dtype": "UNSIGNED8"
       }
     },
     "rxpdo": {
       "7000": {
         "otype": "VAR",
-        "name": "LedIn",
+        "name": "Led",
         "access": "RO",
         "pdo_mappings": [
           "rxpdo"
         ],
-        "dtype": "BOOLEAN",
+        "dtype": "INTEGER8",
         "value": "0",
-        "data": "&Obj.LedIn"
+        "data": "&Obj.Led"
+      },
+      "7001": {
+        "otype": "RECORD",
+        "name": "can1_tx_head",
+        "access": "RO",
+        "items": [
+          {
+            "name": "Max SubIndex"
+          },
+          {
+            "name": "StdId",
+            "dtype": "UNSIGNED32",
+            "data": "&Obj.can1_tx_head.StdId",
+            "value": "0",
+            "access": "RO"
+          },
+          {
+            "name": "ExtId",
+            "dtype": "UNSIGNED32",
+            "value": "0",
+            "access": "RO",
+            "data": "&Obj.can1_tx_head.ExtId"
+          },
+          {
+            "name": "IDE",
+            "dtype": "UNSIGNED8",
+            "value": "0",
+            "access": "RO",
+            "data": "&Obj.can1_tx_head.IDE"
+          },
+          {
+            "name": "RTR",
+            "dtype": "UNSIGNED8",
+            "value": "0",
+            "access": "RO",
+            "data": "&Obj.can1_tx_head.RTR"
+          },
+          {
+            "name": "DLC",
+            "dtype": "UNSIGNED8",
+            "value": "0",
+            "access": "RO",
+            "data": "&Obj.can1_tx_head.DLC"
+          }
+        ],
+        "pdo_mappings": [
+          "rxpdo"
+        ]
+      },
+      "7002": {
+        "otype": "ARRAY",
+        "name": "can1_tx_data",
+        "access": "RO",
+        "items": [
+          {
+            "name": "Max SubIndex"
+          },
+          {
+            "name": "0",
+            "data": "&Obj.can1_tx_data[0]",
+            "value": "0"
+          },
+          {
+            "name": "1",
+            "value": "0",
+            "data": "&Obj.can1_tx_data[1]"
+          },
+          {
+            "name": "2",
+            "value": "0",
+            "data": "&Obj.can1_tx_data[2]"
+          },
+          {
+            "name": "3",
+            "value": "0",
+            "data": "&Obj.can1_tx_data[3]"
+          },
+          {
+            "name": "4",
+            "value": "0",
+            "data": "&Obj.can1_tx_data[4]"
+          },
+          {
+            "name": "5",
+            "value": "0",
+            "data": "&Obj.can1_tx_data[5]"
+          },
+          {
+            "name": "6",
+            "value": "0",
+            "data": "&Obj.can1_tx_data[6]"
+          },
+          {
+            "name": "7",
+            "value": "0",
+            "data": "&Obj.can1_tx_data[7]"
+          }
+        ],
+        "pdo_mappings": [
+          "rxpdo"
+        ],
+        "dtype": "UNSIGNED8"
       }
     }
   },

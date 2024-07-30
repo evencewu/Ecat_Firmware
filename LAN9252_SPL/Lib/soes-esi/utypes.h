@@ -13,13 +13,28 @@ typedef struct
 
    /* Inputs */
 
-   uint8_t Key1;
-   uint8_t Key2;
-   uint32_t Counter;
+   struct
+   {
+      uint32_t StdId;
+      uint32_t ExtId;
+      uint8_t IDE;
+      uint8_t RTR;
+      uint8_t DLC;
+   } can1_rx_head;
+   uint8_t can1_rx_data[8];
 
    /* Outputs */
 
-   uint8_t LedIn;
+   int8_t Led;
+   struct
+   {
+      uint32_t StdId;
+      uint32_t ExtId;
+      uint8_t IDE;
+      uint8_t RTR;
+      uint8_t DLC;
+   } can1_tx_head;
+   uint8_t can1_tx_data[8];
 
 } _Objects;
 
