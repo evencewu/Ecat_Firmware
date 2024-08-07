@@ -35,6 +35,12 @@
 #define CAN2_RX_SOURCE GPIO_PinSource5
 #define CAN2_TX_SOURCE GPIO_PinSource6
 
+extern CanTxMsg Can1_TxMessage; // 发送缓冲区
+extern CanRxMsg Can1_RxMessage; // 接收缓冲区
+
+extern CanTxMsg Can2_TxMessage; // 发送缓冲区
+extern CanRxMsg Can2_RxMessage; // 接收缓冲区
+
 void CAN1_Config(void);
 void CAN2_Config(void);
 

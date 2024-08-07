@@ -7,28 +7,33 @@
 #include "utypes.h"
 
 #include "bsp_can.h"
+#include "module_can_balance.h"
 
 /* CANopen Object Dictionary */
 _Objects Obj;
 
+uint8_t led_flag = 0;
 /* Application hook declaration */
-void ecatapp();
+//can数据包发送最高频率7634Hz
+void ecatapp()
+{
+    LedWrite(led_flag);
+    CanTxMsg Can1_TxMessage = GetCanPackage(can_balance[0]);
+    CanTxMsg Can2_TxMessage = GetCanPackage(can_balance[1]);
 
-extern CanTxMsg Can1_TxMessage; // 发送缓冲区
-extern CanRxMsg Can1_RxMessage; // 接收缓冲区
-
-extern CanTxMsg Can2_TxMessage; // 发送缓冲区
-extern CanRxMsg Can2_RxMessage; // 接收缓冲区
+    CAN_Transmit(CAN1, &Can1_TxMessage);
+    CAN_Transmit(CAN2, &Can2_TxMessage);
+}
 
 /* SOES configuration */
 static esc_cfg_t config = {
     .user_arg = "/dev/lan9252",
     .use_interrupt = 0,
-    .watchdog_cnt = 500,
+    .watchdog_cnt = 200,
     .set_defaults_hook = NULL,
     .pre_state_change_hook = NULL,
     .post_state_change_hook = NULL,
-    .application_hook = NULL,
+    .application_hook = ecatapp,
     .safeoutput_override = NULL,
     .pre_object_download_hook = NULL,
     .post_object_download_hook = NULL,
@@ -44,10 +49,6 @@ static esc_cfg_t config = {
 
 void cb_get_inputs()
 {
-    // write to slave TxPDO
-    // dummy value, so that sawtooth value profile will be seen constantly changing by ecat master
-    // Obj.Counter++;
-
     Obj.can1_rx_head.StdId = Can1_RxMessage.StdId;
     Obj.can1_rx_head.ExtId = Can1_RxMessage.ExtId;
     Obj.can1_rx_head.IDE = Can1_RxMessage.IDE;
@@ -58,43 +59,49 @@ void cb_get_inputs()
     {
         Obj.can1_rx_data[i] = Can1_RxMessage.Data[i];
     }
+
+    Obj.can2_rx_head.StdId = Can2_RxMessage.StdId;
+    Obj.can2_rx_head.ExtId = Can2_RxMessage.ExtId;
+    Obj.can2_rx_head.IDE = Can2_RxMessage.IDE;
+    Obj.can2_rx_head.RTR = Can2_RxMessage.RTR;
+    Obj.can2_rx_head.DLC = Can2_RxMessage.DLC;
+
+    for (int i = 0; i < 8; i++)
+    {
+        Obj.can2_rx_data[i] = Can2_RxMessage.Data[i];
+    }
 }
 
 void cb_set_outputs()
 {
-    Can1_TxMessage.StdId = Obj.can1_tx_head.StdId;
-    Can1_TxMessage.ExtId = Obj.can1_tx_head.ExtId;
-    Can1_TxMessage.IDE = Obj.can1_tx_head.IDE;
-    Can1_TxMessage.RTR = Obj.can1_tx_head.RTR;
-    Can1_TxMessage.DLC = Obj.can1_tx_head.DLC;
+    CanTxMsg can[2];
+
+    can[0].StdId = Obj.can1_tx_head.StdId;
+    can[0].ExtId = Obj.can1_tx_head.ExtId;
+    can[0].IDE = Obj.can1_tx_head.IDE;
+    can[0].RTR = Obj.can1_tx_head.RTR;
+    can[0].DLC = Obj.can1_tx_head.DLC;
 
     for (int i = 0; i < 8; i++)
     {
-        Can1_TxMessage.Data[i] = Obj.can1_tx_data[i];
+        can[0].Data[i] = Obj.can1_tx_data[i];
     }
 
-    CAN_Transmit(CAN1, &Can1_TxMessage);
+    can[1].StdId = Obj.can2_tx_head.StdId;
+    can[1].ExtId = Obj.can2_tx_head.ExtId;
+    can[1].IDE = Obj.can2_tx_head.IDE;
+    can[1].RTR = Obj.can2_tx_head.RTR;
+    can[1].DLC = Obj.can2_tx_head.DLC;
 
-    /*
-    Can2_TxMessage.StdId = sDOOutputs.can2_h0;
-    Can2_TxMessage.ExtId = sDOOutputs.can2_h1;
-    Can2_TxMessage.IDE = sDOOutputs.can2_h2;
-    Can2_TxMessage.RTR = sDOOutputs.can2_h3;
-    Can2_TxMessage.DLC = sDOOutputs.can2_h4;
+    for (int i = 0; i < 8; i++)
+    {
+        can[1].Data[i] = Obj.can2_tx_data[i];
+    }
 
-    Can2_TxMessage.Data[0] = sDOOutputs.can2_d0;
-    Can2_TxMessage.Data[1] = sDOOutputs.can2_d1;
-    Can2_TxMessage.Data[2] = sDOOutputs.can2_d2;
-    Can2_TxMessage.Data[3] = sDOOutputs.can2_d3;
-    Can2_TxMessage.Data[4] = sDOOutputs.can2_d4;
-    Can2_TxMessage.Data[5] = sDOOutputs.can2_d5;
-    Can2_TxMessage.Data[6] = sDOOutputs.can2_d6;
-    Can2_TxMessage.Data[7] = sDOOutputs.can2_d7;
+    AddCanPackage(can[0], can_balance[0]);
+    AddCanPackage(can[1], can_balance[1]);
 
-    CAN_Transmit(CAN2, &Can2_TxMessage);
-    */
-
-    LedWrite(Obj.Led);
+    led_flag = Obj.Led;
 }
 
 int main()
@@ -103,6 +110,9 @@ int main()
 
     LedInit();
     ecat_slv_init(&config);
+
+    CAN1_Config();
+    CAN2_Config();
 
     while (1)
     {

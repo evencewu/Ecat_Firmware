@@ -258,6 +258,164 @@
                 </SubItem>
               </DataType>
               <DataType>
+                <Name>DT1603</Name>
+                <BitSize>176</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>Max SubIndex</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>StdId</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>ExtId</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>IDE</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>RTR</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>112</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>5</SubIdx>
+                  <Name>DLC</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>144</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+              </DataType>
+              <DataType>
+                <Name>DT1604</Name>
+                <BitSize>272</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>Max SubIndex</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>0</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>1</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>2</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>3</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>112</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>5</SubIdx>
+                  <Name>4</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>144</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>6</SubIdx>
+                  <Name>5</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>176</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>7</SubIdx>
+                  <Name>6</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>208</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>8</SubIdx>
+                  <Name>7</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>240</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+              </DataType>
+              <DataType>
                 <Name>DT1A00</Name>
                 <BitSize>176</BitSize>
                 <SubItem>
@@ -416,6 +574,164 @@
                 </SubItem>
               </DataType>
               <DataType>
+                <Name>DT1A02</Name>
+                <BitSize>176</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>Max SubIndex</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>StdId</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>ExtId</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>IDE</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>RTR</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>112</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>5</SubIdx>
+                  <Name>DLC</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>144</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+              </DataType>
+              <DataType>
+                <Name>DT1A03</Name>
+                <BitSize>272</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>Max SubIndex</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>0</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>1</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>2</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>3</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>112</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>5</SubIdx>
+                  <Name>4</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>144</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>6</SubIdx>
+                  <Name>5</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>176</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>7</SubIdx>
+                  <Name>6</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>208</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>8</SubIdx>
+                  <Name>7</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>240</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+              </DataType>
+              <DataType>
                 <Name>DT1C00ARR</Name>
                 <BaseType>USINT</BaseType>
                 <BitSize>32</BitSize>
@@ -450,15 +766,15 @@
               <DataType>
                 <Name>DT1C12ARR</Name>
                 <BaseType>UINT</BaseType>
-                <BitSize>48</BitSize>
+                <BitSize>80</BitSize>
                 <ArrayInfo>
                   <LBound>1</LBound>
-                  <Elements>3</Elements>
+                  <Elements>5</Elements>
                 </ArrayInfo>
               </DataType>
               <DataType>
                 <Name>DT1C12</Name>
-                <BitSize>64</BitSize>
+                <BitSize>96</BitSize>
                 <SubItem>
                   <SubIdx>0</SubIdx>
                   <Name>Max SubIndex</Name>
@@ -472,7 +788,7 @@
                 <SubItem>
                   <Name>Elements</Name>
                   <Type>DT1C12ARR</Type>
-                  <BitSize>48</BitSize>
+                  <BitSize>80</BitSize>
                   <BitOffs>16</BitOffs>
                   <Flags>
                     <Access>ro</Access>
@@ -482,15 +798,15 @@
               <DataType>
                 <Name>DT1C13ARR</Name>
                 <BaseType>UINT</BaseType>
-                <BitSize>32</BitSize>
+                <BitSize>64</BitSize>
                 <ArrayInfo>
                   <LBound>1</LBound>
-                  <Elements>2</Elements>
+                  <Elements>4</Elements>
                 </ArrayInfo>
               </DataType>
               <DataType>
                 <Name>DT1C13</Name>
-                <BitSize>48</BitSize>
+                <BitSize>80</BitSize>
                 <SubItem>
                   <SubIdx>0</SubIdx>
                   <Name>Max SubIndex</Name>
@@ -504,7 +820,7 @@
                 <SubItem>
                   <Name>Elements</Name>
                   <Type>DT1C13ARR</Type>
-                  <BitSize>32</BitSize>
+                  <BitSize>64</BitSize>
                   <BitOffs>16</BitOffs>
                   <Flags>
                     <Access>ro</Access>
@@ -614,6 +930,108 @@
                 </SubItem>
               </DataType>
               <DataType>
+                <Name>DT6002</Name>
+                <BitSize>104</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>Max SubIndex</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>StdId</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">wo</Access>
+                  <PdoMapping>T</PdoMapping>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>ExtId</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">wo</Access>
+                  <PdoMapping>T</PdoMapping>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>IDE</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">wo</Access>
+                  <PdoMapping>T</PdoMapping>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>RTR</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>88</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">ro</Access>
+                  <PdoMapping>T</PdoMapping>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>5</SubIdx>
+                  <Name>DLC</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>96</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">ro</Access>
+                  <PdoMapping>T</PdoMapping>
+                  </Flags>
+                </SubItem>
+              </DataType>
+              <DataType>
+                <Name>DT6003ARR</Name>
+                <BaseType>USINT</BaseType>
+                <BitSize>64</BitSize>
+                <ArrayInfo>
+                  <LBound>1</LBound>
+                  <Elements>8</Elements>
+                </ArrayInfo>
+              </DataType>
+              <DataType>
+                <Name>DT6003</Name>
+                <BitSize>80</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>Max SubIndex</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <Name>Elements</Name>
+                  <Type>DT6003ARR</Type>
+                  <BitSize>64</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  <PdoMapping>T</PdoMapping>
+                  </Flags>
+                </SubItem>
+              </DataType>
+              <DataType>
                 <Name>DT7001</Name>
                 <BitSize>104</BitSize>
                 <SubItem>
@@ -707,6 +1125,108 @@
                 <SubItem>
                   <Name>Elements</Name>
                   <Type>DT7002ARR</Type>
+                  <BitSize>64</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  <PdoMapping>R</PdoMapping>
+                  </Flags>
+                </SubItem>
+              </DataType>
+              <DataType>
+                <Name>DT7003</Name>
+                <BitSize>104</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>Max SubIndex</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>1</SubIdx>
+                  <Name>StdId</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>16</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">ro</Access>
+                  <PdoMapping>R</PdoMapping>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>2</SubIdx>
+                  <Name>ExtId</Name>
+                  <Type>UDINT</Type>
+                  <BitSize>32</BitSize>
+                  <BitOffs>48</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">ro</Access>
+                  <PdoMapping>R</PdoMapping>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>3</SubIdx>
+                  <Name>IDE</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>80</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">ro</Access>
+                  <PdoMapping>R</PdoMapping>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>4</SubIdx>
+                  <Name>RTR</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>88</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">ro</Access>
+                  <PdoMapping>R</PdoMapping>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <SubIdx>5</SubIdx>
+                  <Name>DLC</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>96</BitOffs>
+                  <Flags>
+                    <Access WriteRestrictions="PreOP">ro</Access>
+                  <PdoMapping>R</PdoMapping>
+                  </Flags>
+                </SubItem>
+              </DataType>
+              <DataType>
+                <Name>DT7004ARR</Name>
+                <BaseType>USINT</BaseType>
+                <BitSize>64</BitSize>
+                <ArrayInfo>
+                  <LBound>1</LBound>
+                  <Elements>8</Elements>
+                </ArrayInfo>
+              </DataType>
+              <DataType>
+                <Name>DT7004</Name>
+                <BitSize>80</BitSize>
+                <SubItem>
+                  <SubIdx>0</SubIdx>
+                  <Name>Max SubIndex</Name>
+                  <Type>USINT</Type>
+                  <BitSize>8</BitSize>
+                  <BitOffs>0</BitOffs>
+                  <Flags>
+                    <Access>ro</Access>
+                  </Flags>
+                </SubItem>
+                <SubItem>
+                  <Name>Elements</Name>
+                  <Type>DT7004ARR</Type>
                   <BitSize>64</BitSize>
                   <BitOffs>16</BitOffs>
                   <Flags>
@@ -968,6 +1488,118 @@
                 </Flags>
               </Object>
               <Object>
+                <Index>#x1603</Index>
+                <Name>can2_tx_head</Name>
+                <Type>DT1603</Type>
+                <BitSize>176</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>Max SubIndex</Name>
+                    <Info>
+                      <DefaultValue>5</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>StdId</Name>
+                    <Info>
+                      <DefaultValue>#x70030120</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>ExtId</Name>
+                    <Info>
+                      <DefaultValue>#x70030220</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>IDE</Name>
+                    <Info>
+                      <DefaultValue>#x70030308</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>RTR</Name>
+                    <Info>
+                      <DefaultValue>#x70030408</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>DLC</Name>
+                    <Info>
+                      <DefaultValue>#x70030508</DefaultValue>
+                    </Info>
+                  </SubItem>
+                </Info>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+              <Object>
+                <Index>#x1604</Index>
+                <Name>can2_tx_data</Name>
+                <Type>DT1604</Type>
+                <BitSize>272</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>Max SubIndex</Name>
+                    <Info>
+                      <DefaultValue>8</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>0</Name>
+                    <Info>
+                      <DefaultValue>#x70040108</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>1</Name>
+                    <Info>
+                      <DefaultValue>#x70040208</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>2</Name>
+                    <Info>
+                      <DefaultValue>#x70040308</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>3</Name>
+                    <Info>
+                      <DefaultValue>#x70040408</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>4</Name>
+                    <Info>
+                      <DefaultValue>#x70040508</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>5</Name>
+                    <Info>
+                      <DefaultValue>#x70040608</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>6</Name>
+                    <Info>
+                      <DefaultValue>#x70040708</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>7</Name>
+                    <Info>
+                      <DefaultValue>#x70040808</DefaultValue>
+                    </Info>
+                  </SubItem>
+                </Info>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+              <Object>
                 <Index>#x1A00</Index>
                 <Name>can1_rx_head</Name>
                 <Type>DT1A00</Type>
@@ -1080,6 +1712,118 @@
                 </Flags>
               </Object>
               <Object>
+                <Index>#x1A02</Index>
+                <Name>can2_rx_head</Name>
+                <Type>DT1A02</Type>
+                <BitSize>176</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>Max SubIndex</Name>
+                    <Info>
+                      <DefaultValue>5</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>StdId</Name>
+                    <Info>
+                      <DefaultValue>#x60020120</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>ExtId</Name>
+                    <Info>
+                      <DefaultValue>#x60020220</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>IDE</Name>
+                    <Info>
+                      <DefaultValue>#x60020308</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>RTR</Name>
+                    <Info>
+                      <DefaultValue>#x60020408</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>DLC</Name>
+                    <Info>
+                      <DefaultValue>#x60020508</DefaultValue>
+                    </Info>
+                  </SubItem>
+                </Info>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+              <Object>
+                <Index>#x1A03</Index>
+                <Name>can2_rx_data</Name>
+                <Type>DT1A03</Type>
+                <BitSize>272</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>Max SubIndex</Name>
+                    <Info>
+                      <DefaultValue>8</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>0</Name>
+                    <Info>
+                      <DefaultValue>#x60030108</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>1</Name>
+                    <Info>
+                      <DefaultValue>#x60030208</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>2</Name>
+                    <Info>
+                      <DefaultValue>#x60030308</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>3</Name>
+                    <Info>
+                      <DefaultValue>#x60030408</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>4</Name>
+                    <Info>
+                      <DefaultValue>#x60030508</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>5</Name>
+                    <Info>
+                      <DefaultValue>#x60030608</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>6</Name>
+                    <Info>
+                      <DefaultValue>#x60030708</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>7</Name>
+                    <Info>
+                      <DefaultValue>#x60030808</DefaultValue>
+                    </Info>
+                  </SubItem>
+                </Info>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+              <Object>
                 <Index>#x1C00</Index>
                 <Name>Sync Manager Communication Type</Name>
                 <Type>DT1C00</Type>
@@ -1124,12 +1868,12 @@
                 <Index>#x1C12</Index>
                 <Name>Sync Manager 2 PDO Assignment</Name>
                 <Type>DT1C12</Type>
-                <BitSize>64</BitSize>
+                <BitSize>96</BitSize>
                 <Info>
                   <SubItem>
                     <Name>Max SubIndex</Name>
                     <Info>
-                      <DefaultValue>3</DefaultValue>
+                      <DefaultValue>5</DefaultValue>
                     </Info>
                   </SubItem>
                   <SubItem>
@@ -1150,6 +1894,18 @@
                       <DefaultValue>#x1602</DefaultValue>
                     </Info>
                   </SubItem>
+                  <SubItem>
+                    <Name>PDO Mapping</Name>
+                    <Info>
+                      <DefaultValue>#x1603</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>PDO Mapping</Name>
+                    <Info>
+                      <DefaultValue>#x1604</DefaultValue>
+                    </Info>
+                  </SubItem>
                 </Info>
                 <Flags>
                   <Access>ro</Access>
@@ -1159,12 +1915,12 @@
                 <Index>#x1C13</Index>
                 <Name>Sync Manager 3 PDO Assignment</Name>
                 <Type>DT1C13</Type>
-                <BitSize>48</BitSize>
+                <BitSize>80</BitSize>
                 <Info>
                   <SubItem>
                     <Name>Max SubIndex</Name>
                     <Info>
-                      <DefaultValue>2</DefaultValue>
+                      <DefaultValue>4</DefaultValue>
                     </Info>
                   </SubItem>
                   <SubItem>
@@ -1177,6 +1933,18 @@
                     <Name>PDO Mapping</Name>
                     <Info>
                       <DefaultValue>#x1A01</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>PDO Mapping</Name>
+                    <Info>
+                      <DefaultValue>#x1A02</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>PDO Mapping</Name>
+                    <Info>
+                      <DefaultValue>#x1A03</DefaultValue>
                     </Info>
                   </SubItem>
                 </Info>
@@ -1235,6 +2003,118 @@
                 <Index>#x6001</Index>
                 <Name>can1_rx_data</Name>
                 <Type>DT6001</Type>
+                <BitSize>80</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>Max SubIndex</Name>
+                    <Info>
+                      <DefaultValue>8</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>0</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>1</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>2</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>3</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>4</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>5</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>6</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>7</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                </Info>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+              <Object>
+                <Index>#x6002</Index>
+                <Name>can2_rx_head</Name>
+                <Type>DT6002</Type>
+                <BitSize>104</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>Max SubIndex</Name>
+                    <Info>
+                      <DefaultValue>5</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>StdId</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>ExtId</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>IDE</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>RTR</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>DLC</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                </Info>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+              <Object>
+                <Index>#x6003</Index>
+                <Name>can2_rx_data</Name>
+                <Type>DT6003</Type>
                 <BitSize>80</BitSize>
                 <Info>
                   <SubItem>
@@ -1421,6 +2301,118 @@
                   <Access>ro</Access>
                 </Flags>
               </Object>
+              <Object>
+                <Index>#x7003</Index>
+                <Name>can2_tx_head</Name>
+                <Type>DT7003</Type>
+                <BitSize>104</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>Max SubIndex</Name>
+                    <Info>
+                      <DefaultValue>5</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>StdId</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>ExtId</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>IDE</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>RTR</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>DLC</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                </Info>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
+              <Object>
+                <Index>#x7004</Index>
+                <Name>can2_tx_data</Name>
+                <Type>DT7004</Type>
+                <BitSize>80</BitSize>
+                <Info>
+                  <SubItem>
+                    <Name>Max SubIndex</Name>
+                    <Info>
+                      <DefaultValue>8</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>0</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>1</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>2</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>3</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>4</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>5</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>6</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                  <SubItem>
+                    <Name>7</Name>
+                    <Info>
+                      <DefaultValue>0</DefaultValue>
+                    </Info>
+                  </SubItem>
+                </Info>
+                <Flags>
+                  <Access>ro</Access>
+                </Flags>
+              </Object>
             </Objects>
           </Dictionary>
         </Profile>
@@ -1541,6 +2533,105 @@
             <DataType>USINT</DataType>
           </Entry>
         </RxPdo>
+        <RxPdo Fixed="true" Mandatory="true" Sm="2">
+          <Index>#x1603</Index>
+          <Name>can2_tx_head</Name>
+          <Entry>
+            <Index>#x7003</Index>
+            <SubIndex>#x1</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>StdId</Name>
+            <DataType>UDINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7003</Index>
+            <SubIndex>#x2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>ExtId</Name>
+            <DataType>UDINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7003</Index>
+            <SubIndex>#x3</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>IDE</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7003</Index>
+            <SubIndex>#x4</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>RTR</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7003</Index>
+            <SubIndex>#x5</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>DLC</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Fixed="true" Mandatory="true" Sm="2">
+          <Index>#x1604</Index>
+          <Name>can2_tx_data</Name>
+          <Entry>
+            <Index>#x7004</Index>
+            <SubIndex>#x1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>0</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7004</Index>
+            <SubIndex>#x2</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>1</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7004</Index>
+            <SubIndex>#x3</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>2</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7004</Index>
+            <SubIndex>#x4</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>3</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7004</Index>
+            <SubIndex>#x5</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>4</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7004</Index>
+            <SubIndex>#x6</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>5</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7004</Index>
+            <SubIndex>#x7</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>6</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x7004</Index>
+            <SubIndex>#x8</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>7</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+        </RxPdo>
         <TxPdo Fixed="true" Mandatory="true" Sm="3">
           <Index>#x1A00</Index>
           <Name>can1_rx_head</Name>
@@ -1634,6 +2725,105 @@
           </Entry>
           <Entry>
             <Index>#x6001</Index>
+            <SubIndex>#x8</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>7</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="true" Mandatory="true" Sm="3">
+          <Index>#x1A02</Index>
+          <Name>can2_rx_head</Name>
+          <Entry>
+            <Index>#x6002</Index>
+            <SubIndex>#x1</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>StdId</Name>
+            <DataType>UDINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6002</Index>
+            <SubIndex>#x2</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>ExtId</Name>
+            <DataType>UDINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6002</Index>
+            <SubIndex>#x3</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>IDE</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6002</Index>
+            <SubIndex>#x4</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>RTR</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6002</Index>
+            <SubIndex>#x5</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>DLC</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Fixed="true" Mandatory="true" Sm="3">
+          <Index>#x1A03</Index>
+          <Name>can2_rx_data</Name>
+          <Entry>
+            <Index>#x6003</Index>
+            <SubIndex>#x1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>0</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6003</Index>
+            <SubIndex>#x2</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>1</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6003</Index>
+            <SubIndex>#x3</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>2</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6003</Index>
+            <SubIndex>#x4</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>3</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6003</Index>
+            <SubIndex>#x5</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>4</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6003</Index>
+            <SubIndex>#x6</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>5</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6003</Index>
+            <SubIndex>#x7</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>6</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6003</Index>
             <SubIndex>#x8</SubIndex>
             <BitLen>8</BitLen>
             <Name>7</Name>
