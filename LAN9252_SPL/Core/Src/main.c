@@ -18,18 +18,17 @@ uint8_t led_flag = 0;
 /* Application hook declaration */
 // can数据包发送最高频率7634Hz
 
+CanTxMsg Can1_TxMessage;
+CanTxMsg Can2_TxMessage;
+
 uint8_t flag = 0;
 
 void TIM2_Task(void)
 {
+    // led_flag = 0x07;
     LedWrite(led_flag);
 
-    // CanTxMsg Can1_TxMessage = GetCanPackage(&can_balance[0]);
-    // CanTxMsg Can2_TxMessage = GetCanPackage(&can_balance[1]);
-    CanTxMsg Can1_TxMessage;
-    CanTxMsg Can2_TxMessage;
-
-    Can1_TxMessage.StdId = 0x01;
+    /*
     Can1_TxMessage.ExtId = 0x00;
     Can1_TxMessage.IDE = 0x00;
     Can1_TxMessage.RTR = 0x00;
@@ -47,14 +46,14 @@ void TIM2_Task(void)
     if (flag == 1)
     {
         Can1_TxMessage.StdId = 0x01;
+        flag = 0;
     }
     else
     {
         Can1_TxMessage.StdId = 0x02;
+        flag = 1;
     }
-
-    CAN_Transmit(CAN1, &Can1_TxMessage);
-    CAN_Transmit(CAN2, &Can2_TxMessage);
+    */
 }
 
 void ecatapp()
@@ -134,8 +133,14 @@ void cb_set_outputs()
         can[1].Data[i] = Obj.can2_tx_data[i];
     }
 
-    AddCanPackage(&can_balance[0], &can[0]);
-    AddCanPackage(&can_balance[1], &can[1]);
+    Can1_TxMessage = can[0];
+    Can2_TxMessage = can[1];
+
+    // AddCanPackage(&can_balance[0], &can[0]);
+    // AddCanPackage(&can_balance[1], &can[1]);
+
+    CAN_Transmit(CAN1, &Can1_TxMessage);
+    CAN_Transmit(CAN2, &Can2_TxMessage);
 
     led_flag = Obj.Led;
 }
