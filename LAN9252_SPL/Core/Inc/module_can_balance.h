@@ -7,10 +7,13 @@
 #define CAN_TX_BUFFER_MAX_SIZE 8
 #define CAN_DEVICE_MAX_SIZE 8
 
+#define NONE_BALANCE 0
+#define STDID_BALANCE 1
 // 初始化can发送缓冲区
 
 typedef struct CanBalance
 {
+    int mode;
     CanTxMsg can_tx_buffer[CAN_DEVICE_MAX_SIZE];
 
     int can_device_size;
@@ -23,7 +26,8 @@ extern CanBalance can_balance[2];
 
 // RingBufADD()
 
-void AddCanPackage(CanTxMsg can_pack, CanBalance can_balance);
-CanTxMsg GetCanPackage(CanBalance can_balance);
+void SetCanBalance(CanBalance *can_balance,int mode);
+void AddCanPackage(CanBalance *can_balance,CanTxMsg *can_pack);
+CanTxMsg GetCanPackage(CanBalance *can_balance);
 
 #endif

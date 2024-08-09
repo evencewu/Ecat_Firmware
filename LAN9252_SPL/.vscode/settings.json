@@ -4,6 +4,8 @@
     "stm32-for-vscode.armToolchainPath": false,
     "files.associations": {
         "bsp_led.h": "c",
-        "bsp_can.h": "c"
+        "bsp_can.h": "c",
+        "module_can_balance.h": "c",
+        "stdbool.h": "c"
     }
 }

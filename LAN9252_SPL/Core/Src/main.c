@@ -9,20 +9,56 @@
 #include "bsp_can.h"
 #include "module_can_balance.h"
 
+#include "bsp_tim.h"
+
 /* CANopen Object Dictionary */
 _Objects Obj;
 
 uint8_t led_flag = 0;
 /* Application hook declaration */
-//can数据包发送最高频率7634Hz
-void ecatapp()
+// can数据包发送最高频率7634Hz
+
+uint8_t flag = 0;
+
+void TIM2_Task(void)
 {
     LedWrite(led_flag);
-    CanTxMsg Can1_TxMessage = GetCanPackage(can_balance[0]);
-    CanTxMsg Can2_TxMessage = GetCanPackage(can_balance[1]);
+
+    // CanTxMsg Can1_TxMessage = GetCanPackage(&can_balance[0]);
+    // CanTxMsg Can2_TxMessage = GetCanPackage(&can_balance[1]);
+    CanTxMsg Can1_TxMessage;
+    CanTxMsg Can2_TxMessage;
+
+    Can1_TxMessage.StdId = 0x01;
+    Can1_TxMessage.ExtId = 0x00;
+    Can1_TxMessage.IDE = 0x00;
+    Can1_TxMessage.RTR = 0x00;
+    Can1_TxMessage.DLC = 0x08;
+
+    Can1_TxMessage.Data[0] = 0xFF;
+    Can1_TxMessage.Data[1] = 0xFF;
+    Can1_TxMessage.Data[2] = 0xFF;
+    Can1_TxMessage.Data[3] = 0xFF;
+    Can1_TxMessage.Data[4] = 0xFF;
+    Can1_TxMessage.Data[5] = 0xFF;
+    Can1_TxMessage.Data[6] = 0xFF;
+    Can1_TxMessage.Data[7] = 0xFC;
+
+    if (flag == 1)
+    {
+        Can1_TxMessage.StdId = 0x01;
+    }
+    else
+    {
+        Can1_TxMessage.StdId = 0x02;
+    }
 
     CAN_Transmit(CAN1, &Can1_TxMessage);
     CAN_Transmit(CAN2, &Can2_TxMessage);
+}
+
+void ecatapp()
+{
 }
 
 /* SOES configuration */
@@ -98,8 +134,8 @@ void cb_set_outputs()
         can[1].Data[i] = Obj.can2_tx_data[i];
     }
 
-    AddCanPackage(can[0], can_balance[0]);
-    AddCanPackage(can[1], can_balance[1]);
+    AddCanPackage(&can_balance[0], &can[0]);
+    AddCanPackage(&can_balance[1], &can[1]);
 
     led_flag = Obj.Led;
 }
@@ -111,8 +147,13 @@ int main()
     LedInit();
     ecat_slv_init(&config);
 
+    SetCanBalance(&can_balance[0], NONE_BALANCE);
+    SetCanBalance(&can_balance[1], NONE_BALANCE);
+
     CAN1_Config();
     CAN2_Config();
+
+    TIM2_Init();
 
     while (1)
     {
